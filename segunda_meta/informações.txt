@@ -1,0 +1,18 @@
+
+Testar se biblioteca está instalada -> sudo dpkg -l wiringpi e sudo dpkg -l wiringserial
+
+
+
+"/dev/ttyS0" é o nome do dispositivo que representa a porta serial UART no sistema operacional Linux.
+
+Em sistemas baseados em Linux, os dispositivos são representados como arquivos dentro do diretório "/dev". O prefixo "tty" é usado para identificar dispositivos que representam terminais seriais ou portas seriais, enquanto o sufixo "S0" é usado para identificar a primeira porta serial (COM1) em sistemas x86.
+
+O número "0" no final de "ttyS0" indica que esta é a primeira porta serial no sistema, enquanto "ttyS1" representa a segunda porta serial e assim por diante.
+
+
+# Na Orange Pi PC Plus, a porta serial ttyS0 é mapeada para os pinos físicos 8 (TX) e 10 (RX) do conector GPIO.
+
+    O pino 8 (TX) é responsável pela transmissão de dados e o pino 10 (RX) é responsável pela recepção de dados. Você deve conectar esses pinos aos pinos correspondentes na porta serial da outra placa para estabelecer a comunicação serial.
+
+# Na Orange Pi PC Plus, a porta serial ttyS1 é mapeada para os pinos físicos 12 (TX) e 13 (RX) do conector GPIO, de acordo com o esquema de pinagem abaixo:
+    O pino 12 (TX) é responsável pela transmissão de dados e o pino 13 (RX) é responsável pela recepção de dados. Você deve conectar esses pinos aos pinos correspondentes na porta serial da outra placa para estabelecer a comunicação serial.
