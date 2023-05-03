@@ -1,0 +1,98 @@
+Tabela 01:
+
+Tabela seleção da unidade
+
+Numero Binario | Ação
+1000 0000 | Seleciona todas as unidades
+0000 0000 | Tira a seleção de todas as unidades
+1000 0001 | Seleciona unidade 01
+0000 0001 | Tira a seleção da unidade 01
+1000 0010 | Seleciona unidade 02
+0000 0010 | Tira a seleção da unidade 02
+1000 0011 | Seleciona unidade 03
+0000 0011 | Tira a seleção da unidade 03
+1000 0100 | Seleciona unidade 04
+0000 0100 | Tira a seleção da unidade 04
+1000 0101 | Seleciona unidade 05
+0000 0101 | Tira a seleção da unidade 05
+1000 0110 | Seleciona unidade 06
+0000 0110 | Tira a seleção da unidade 06
+1000 0111 | Seleciona unidade 07
+0000 0111 | Tira a seleção da unidade 07
+1000 1000 | Seleciona unidade 08
+0000 1000 | Tira a seleção da unidade 08
+1000 1001 | Seleciona unidade 09
+0000 1001 | Tira a seleção da unidade 09
+1000 1010 | Seleciona unidade 10
+0000 1010 | Tira a seleção da unidade 10
+0000 1011 | Tira a seleção da unidade 11
+1000 1011 | Seleciona unidade 11
+1000 1100 | Seleciona unidade 12
+0000 1100 | Tira a seleção da unidade 12
+1000 1101 | Seleciona unidade 13
+0000 1101 | Tira a seleção da unidade 13
+1000 1110 | Seleciona unidade 14
+0000 1110 | Tira a seleção da unidade 14
+1000 1111 | Seleciona unidade 15
+0000 1111 | Tira a seleção da unidade 15
+1001 0000 | Seleciona unidade 16
+0001 0000 | Tira a seleção da unidade 16
+1001 0001 | Seleciona unidade 17
+0001 0001 | Tira a seleção da unidade 17
+1001 0010 | Seleciona unidade 18
+0001 0010 | Tira a seleção da unidade 18
+1001 0011 | Seleciona unidade 19
+0001 0011 | Tira a seleção da unidade 19
+1001 0100 | Seleciona unidade 20
+0001 0100 | Tira a seleção da unidade 20
+1001 0101 | Seleciona unidade 21
+0001 0101 | Tira a seleção da unidade 21
+1001 0110 | Seleciona unidade 22
+0001 0110 | Tira a seleção da unidade 22
+1001 0111 | Seleciona unidade 23
+0001 0111 | Tira a seleção da unidade 23
+1001 1000 | Seleciona unidade 24
+0001 1000 | Tira a seleção da unidade 24
+1001 1001 | Seleciona unidade 25
+0001 1001 | Tira a seleção da unidade 25
+1001 1010 | Seleciona unidade 26
+0001 1010 | Tira a seleção da unidade 26
+1001 1011 | Seleciona unidade 27
+0001 1011 | Tira a seleção da unidade 27
+1001 1100 | Seleciona unidade 28
+0001 1100 | Tira a seleção da unidade 28
+1001 1101 | Seleciona unidade 29
+0001 1101 | Tira a seleção da unidade 29
+1001 1110 | Seleciona unidade 30
+0001 1110 | Tira a seleção da unidade 30
+1001 1111 | Seleciona unidade 31
+0001 1111 | Tira a seleção da unidade 31
+
+
+
+Tabela 02:
+Tabela seleção da unidade
+
+Numero Binario | Ação dentro da unidade
+
+0000 0001 | Pegar dados do sensor analogico
+0000 0010 | Pegar dados do sensor digital 01
+0000 0011 | Pegar dados do sensor digital 02
+0000 0100 | Pegar dados do sensor digital 03
+0000 0101 | Pegar dados do sensor digital 04
+0000 0110 | Pegar dados do sensor digital 05
+
+
+
+Tabela 03:
+Tabela de respostas
+
+Tabela seleção da unidade
+
+Numero Binario | Ação dentro da unidade
+
+0000 0000 | Unidade não encontrada
+0000 0001 | Unidade selecionada
+0000 0010 | Sensor com defeito
+0000 0011 | Sensor digital com saida logica alta
+0000 0100 | Sensor digital com saida logica baixa
