@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 
-int qtdItensMenu01 = 34;
+int qtdItensMenu01 = 33;
 int qtdItensMenu02 = 8;
 
 // void imprimir_menu_lcd(char opcoes_menu[][30], int tamanho, int posicaoAtual) {
@@ -16,7 +16,7 @@ int qtdItensMenu02 = 8;
 
 void imprimir(char vetor_menu[][30], int qtdItensMenu){
     // imprimindo as strings do vetor
-    for (int i = 0; i < qtdItensMenu - 1; i++) {
+    for (int i = 0; i < qtdItensMenu; i++) {
         printf("%s\n", vetor_menu[i]);
     }
 }
@@ -24,7 +24,8 @@ void imprimir(char vetor_menu[][30], int qtdItensMenu){
 void criar_menu_01(char vetor_menu01[][30]){
     // atribuindo valores às strings do vetor
     sprintf(vetor_menu01[0], "Selecionar Todas as Unidades");
-    for (int i = 1; i < qtdItensMenu01 - 2 ; i++) {
+    for (int i = 1; i < qtdItensMenu01 - 1 ; i++) {
+        //printf("%i\n", i);
         sprintf(vetor_menu01[i], "Selecionar Unidade %d", i);
     }
     sprintf(vetor_menu01[qtdItensMenu01 - 1], "Sair");
@@ -51,6 +52,7 @@ int main() {
 
     //imprimir(vetor_menu01, qtdItensMenu01);
     //imprimir(vetor_menu02, qtdItensMenu02);
+    printf("%i\n", qtdItensMenu01);
     printf("%s\n", vetor_menu01[qtdItensMenu01 - 1]);
     return 0;
 }
