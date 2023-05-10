@@ -27,7 +27,7 @@ void criar_menu_01(char vetor_menu01[][30]){
     for (int i = 1; i < qtdItensMenu01 - 2 ; i++) {
         sprintf(vetor_menu01[i], "Selecionar Unidade %d", i);
     }
-    sprintf(vetor_menu01[qtdItensMenu01 - 2], "Sair");
+    sprintf(vetor_menu01[qtdItensMenu01 - 1], "Sair");
 }
 
 void criar_menu_02(char vetor_menu02[][30]){
@@ -39,7 +39,7 @@ void criar_menu_02(char vetor_menu02[][30]){
     sprintf(vetor_menu02[4], "Sensor Digital X3");
     sprintf(vetor_menu02[5], "Sensor Digital X4");
     sprintf(vetor_menu02[6], "Sensor Digital X5");
-    sprintf(vetor_menu02[6], "Voltar");
+    sprintf(vetor_menu02[7], "Voltar");
 }
 
 int main() {
@@ -49,8 +49,8 @@ int main() {
     criar_menu_01(vetor_menu01);
     criar_menu_02(vetor_menu02);
 
-    imprimir(vetor_menu01, qtdItensMenu01);
-    imprimir(vetor_menu02, qtdItensMenu02);
-
+    //imprimir(vetor_menu01, qtdItensMenu01);
+    //imprimir(vetor_menu02, qtdItensMenu02);
+    printf("%s\n", vetor_menu01[qtdItensMenu01 - 1]);
     return 0;
 }
