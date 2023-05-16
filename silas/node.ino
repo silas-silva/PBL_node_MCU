@@ -82,12 +82,13 @@ void loop() {
     if (Serial.available() > 0 ){
         char r = Serial.read();
         if (r == 0xF1){
-            char dadoAnalogico = analogRead(17);
-            Serial.write(dadoAnalogico);
-            char digital0 = digitalRead(16);
-            char digital1 = digitalRead(5);
-            Serial.write(digital0);
-            Serial.write(digital1);
+            int  dadoAnalogico = analogRead(17);
+            Serial.print(dadoAnalogico)
+            //Serial.write(dadoAnalogico);
+            int digital0 = digitalRead(16);
+            int digital1 = digitalRead(5);
+            Serial.print(digital0);
+            Serial.print(digital1);
         }
     }
 } 
