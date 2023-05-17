@@ -49,6 +49,7 @@ void enviarDadoUART(int fd, int num) {
 int receberDadoUART(int fd) {
     if (serialDataAvail(fd)){
       int data = serialGetchar(fd); // Leitura do byte da porta UART
+      printf("%d\n", data);
       return data;
       //printf("Byte recebido: %02X\n", data);
     }else{

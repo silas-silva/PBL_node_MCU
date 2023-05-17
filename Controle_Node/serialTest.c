@@ -25,10 +25,6 @@ int qtdItensMenu01 = 34;
 int qtdItensMenu02 = 8;
 
 
-int unidadeSelecionada = 0;
-int escolhaFazerNaNode = 0;
-
-
 
 void imprimir_menu_lcd(char opcoes_menu[][30], int posicaoAtual) {
     // Limpa o display
